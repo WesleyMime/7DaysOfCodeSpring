@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface ImdbClient {
 
     @GetMapping("/Top250Movies/${imdb-key}")
-    String get250Movies();
+    Wrapper<Movie> get250Movies();
 }

@@ -22,6 +22,6 @@ public class ControllerTest {
     void shouldReturnTop250Films() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(Matchers.containsString("{\"items\":[{\"id\":\"")));
+                .andExpect(content().string(Matchers.containsString("{\"items\":[{\"title\":\"")));
     }
 }

@@ -11,7 +11,7 @@ public class Controller {
     private ImdbClient imdbClient;
 
     @GetMapping("/")
-    public String get250Movies() {
+    public Wrapper<Movie> get250Movies() {
         return imdbClient.get250Movies();
     }
 }
