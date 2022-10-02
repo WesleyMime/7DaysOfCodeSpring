@@ -19,9 +19,9 @@ public class ControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    void shouldReturnTop250Films() throws Exception {
+    void shouldReturnTop50Animes() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(Matchers.containsString("{\"items\":[{\"title\":\"")));
+                .andExpect(content().string(Matchers.containsString("<span class=\"card-title\">Top 50 Animes</span>")));
     }
 }

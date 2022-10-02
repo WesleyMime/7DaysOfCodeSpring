@@ -3,10 +3,10 @@ package br.com.alura.sevendaysofcode;
 import java.util.Collections;
 import java.util.List;
 
-public record Wrapper<T>(List<T> items, String errorMessage) {
+public record Wrapper<T>(List<T> results, String errorMessage) {
 
     @Override
-    public List<T> items() {
-        return Collections.unmodifiableList(items);
+    public List<T> results() {
+        return Collections.unmodifiableList(results);
     }
 }

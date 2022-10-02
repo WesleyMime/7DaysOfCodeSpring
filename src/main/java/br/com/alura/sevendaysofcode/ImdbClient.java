@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
         configuration = ImdbClientConfiguration.class)
 public interface ImdbClient {
 
-    @GetMapping("/Top250Movies/${imdb-key}")
-    Wrapper<Movie> get250Movies();
+    @GetMapping("/AdvancedSearch/${imdb-key}?title_type=tv_series&genres=animation&countries=jp")
+    Wrapper<Anime> get50Animes();
 }
