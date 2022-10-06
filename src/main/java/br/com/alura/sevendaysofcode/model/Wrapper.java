@@ -1,4 +1,4 @@
-package br.com.alura.sevendaysofcode;
+package br.com.alura.sevendaysofcode.model;
 
 import java.util.Collections;
 import java.util.List;

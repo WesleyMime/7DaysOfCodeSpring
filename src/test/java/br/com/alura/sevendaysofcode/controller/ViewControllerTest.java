@@ -1,4 +1,4 @@
-package br.com.alura.sevendaysofcode;
+package br.com.alura.sevendaysofcode.controller;
 
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
@@ -13,15 +13,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class ControllerTest {
+public class ViewControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
-    void shouldReturnTop50Animes() throws Exception {
+    void shouldReturnTop250Animes() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(Matchers.containsString("<span class=\"card-title\">Top 50 Animes</span>")));
+                .andExpect(content().string(Matchers.containsString("<span class=\"card-title\">Top 250 Animes</span>")));
     }
 }

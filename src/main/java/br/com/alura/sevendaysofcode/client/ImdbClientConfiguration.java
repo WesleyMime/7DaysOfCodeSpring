@@ -1,4 +1,4 @@
-package br.com.alura.sevendaysofcode;
+package br.com.alura.sevendaysofcode.client;
 
 import feign.okhttp.OkHttpClient;
 import org.springframework.context.annotation.Bean;
