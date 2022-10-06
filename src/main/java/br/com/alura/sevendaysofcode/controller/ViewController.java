@@ -29,4 +29,12 @@ public class ViewController {
         model.addAttribute("title", "Results for " + title);
         return "animes";
     }
+
+    @GetMapping("/favorites")
+    public String getFavorites(Model model) {
+        Wrapper<Anime> wrapper = apiController.getFavorites();
+        model.addAttribute("wrapper", wrapper);
+        model.addAttribute("title", "Favorites");
+        return "animes";
+    }
 }
