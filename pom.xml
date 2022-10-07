@@ -11,7 +11,7 @@
 
 	<groupId>br.com.alura</groupId>
 	<artifactId>sevendaysofcode</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>7daysofcode</name>
 	<description>Projeto Desafio 7 Days of Code</description>
 
